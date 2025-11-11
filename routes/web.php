@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\LocationController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\FormController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,6 +46,9 @@ Route::middleware('auth')->group(function () {
 
     // API for datatables
     Route::get('/api/locations', [LocationController::class, 'apiList'])->name('api.locations');
+
+    Route::get('/forms', [FormController::class, 'index'])->name('forms.index');
+
 
 });
 

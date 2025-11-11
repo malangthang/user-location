@@ -106,6 +106,12 @@
                                     <span>Location</span>
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a href="{{ route('forms.index') }}" class="nav-link">
+                                    <i class="ph ph-map-pin"></i>
+                                    <span>Form</span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
