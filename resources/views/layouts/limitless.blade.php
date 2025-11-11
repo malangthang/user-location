@@ -7,6 +7,7 @@
     <title>@yield('title', config('app.name', 'Laravel'))</title>
     <link href="{{ asset('css/styles.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/all.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/fonts/style.css') }}" rel="stylesheet">
     @stack('styles')
 </head>
 
@@ -31,7 +32,7 @@
                     @else
                         <li class="nav-item"><a href="#" class="nav-link">
                                 <div class="d-flex align-items-center mx-md-1">
-                                    <i class="ph-lifebuoy"></i>
+                                    <i class="ph ph-lifebuoy"></i>
                                     <span class="d-none d-md-inline-block ms-2">Support</span>
                                 </div>
                             </a>
@@ -40,7 +41,7 @@
                             <li class="nav-item"><a href="{{ route('register') }}"
                                     class="navbar-nav-link navbar-nav-link-icon rounded ms-1">
                                     <div class="d-flex align-items-center mx-md-1">
-                                        <i class="ph-user-circle-plus"></i>
+                                        <i class="ph ph-user-circle-plus"></i>
                                         <span class="d-none d-md-inline-block ms-2">Register</span>
                                     </div>
                                 </a>
@@ -49,7 +50,7 @@
                         <li class="nav-item"><a href="{{ route('login') }}"
                                 class="navbar-nav-link navbar-nav-link-icon rounded ms-1">
                                 <div class="d-flex align-items-center mx-md-1">
-                                    <i class="ph-user-circle"></i>
+                                    <i class="ph ph-user-circle"></i>
                                     <span class="d-none d-md-inline-block ms-2">Login</span>
                                 </div>
                             </a>
@@ -72,12 +73,12 @@
                             <div>
                                 <button type="button"
                                     class="btn btn-flat-white btn-icon btn-sm rounded-pill border-transparent sidebar-control sidebar-main-resize d-none d-lg-inline-flex">
-                                    <i class="ph-arrows-left-right"></i>
+                                    <i class="ph ph-arrows-left-right"></i>
                                 </button>
 
                                 <button type="button"
                                     class="btn btn-flat-white btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none">
-                                    <i class="ph-x"></i>
+                                    <i class="ph ph-x"></i>
                                 </button>
                             </div>
                         </div>
@@ -86,7 +87,7 @@
                         <ul class="nav nav-sidebar" data-nav-type="accordion">
                             <li class="nav-item">
                                 <a href="{{ route('dashboard') }}" class="nav-link">
-                                    <i class="ph-house"></i>
+                                    <i class="ph ph-house"></i>
                                     <span>
                                         Dashboard
                                         <span class="d-block fw-normal opacity-50">No pending orders</span>
@@ -95,13 +96,13 @@
                             </li>
                             <li class="nav-item">
                                 <a href="{{ url('/users') }}" class="nav-link">
-                                    <i class="ph-user"></i>
+                                    <i class="ph ph-user"></i>
                                     <span>User</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{ route('locations.index') }}" class="nav-link">
-                                    <i class="ph-map-pin"></i>
+                                    <i class="ph ph-map-pin"></i>
                                     <span>Location</span>
                                 </a>
                             </li>
@@ -122,9 +123,32 @@
                 © 2022 Limitless Web App Kit
             </span>
             <ul class="nav">
-                <li class="nav-item"><a href="#" class="navbar-nav-link">Support</a></li>
-                <li class="nav-item"><a href="#" class="navbar-nav-link">Docs</a></li>
-                <li class="nav-item"><a href="#" class="navbar-nav-link">Purchase</a></li>
+                <li class="nav-item">
+                    <a href="#" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+                        <div class="d-flex align-items-center mx-md-1">
+                            <i class="ph ph-lifebuoy"></i>
+                            <span class="d-none d-md-inline-block ms-2">Support</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item ms-md-1">
+                    <a href="#" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+                        <div class="d-flex align-items-center mx-md-1">
+                            <i class="ph ph-file-text"></i>
+                            <span class="d-none d-md-inline-block ms-2">Docs</span>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item ms-md-1">
+                    <a href="#"
+                        class="navbar-nav-link navbar-nav-link-icon text-primary bg-primary bg-opacity-10 fw-semibold rounded"
+                        target="_blank">
+                        <div class="d-flex align-items-center mx-md-1">
+                            <i class="ph ph-shopping-cart"></i>
+                            <span class="d-none d-md-inline-block ms-2">Purchase</span>
+                        </div>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>

@@ -2,6 +2,38 @@
 @section('title', 'Users')
 @section('content')
     <div class="content-wrapper">
+        <div class="content-inner">
+            <div class="page-header page-header-light shadow">
+                <div class="page-header-content d-lg-flex">
+                    <div class="d-flex">
+                        <h4 class="page-title mb-0">
+                            Users - <span class="fw-normal">User list</span>
+                        </h4>
+
+                        <a href="#page_header"
+                            class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto"
+                            data-bs-toggle="collapse">
+                            <i class="ph ph-caret-down collapsible-indicator ph-sm m-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="page-header-content d-lg-flex border-top">
+                    <div class="d-flex">
+                        <div class="breadcrumb py-2">
+                            <a href="{{ route('dashboard') }}" class="breadcrumb-item"><i class="ph ph-house"></i></a>
+                            <a href="#" class="breadcrumb-item">Users</a>
+                            <span class="breadcrumb-item active">User list</span>
+                        </div>
+
+                        <a href="#breadcrumb_elements"
+                            class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto"
+                            data-bs-toggle="collapse">
+                            <i class="ph ph-caret-down collapsible-indicator ph-sm m-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         <div class="content">
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
@@ -19,7 +51,7 @@
                                             <div class="me-3">
                                                 <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center"
                                                     style="width:48px;height:48px;">
-                                                    <i class="ph-user fs-4"></i>
+                                                     <i class="ph ph-user fs-4"></i>
                                                 </div>
                                             </div>
                                             <div class="flex-grow-1">
@@ -48,6 +80,7 @@
                     @endif
                 </div>
             </div>
+        </div>
         </div>
     </div>
 @endsection
